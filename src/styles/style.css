@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F9FFA4;
+}
+nav{
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F7A76C;
+    color: white;
+}
+nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin-right: 30px;
+    list-style: none;
+    font-weight: 500;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    padding: 40px 0;
+    width: 1200px;
+    margin: auto;
+}
+.container h1{
+    font-size: 35px;
+}
+
+
+.note-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cardNote{
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    background-color: #F7A76C;
+    width: 360px;
+    padding: 15px;
+    text-decoration: none;
+}
+.title-card{
+    font-size: 22px;
+    font-weight: 600;
+}
+.date-card{
+    text-align: end;
+    padding-top: 15px;
+}
+
+.text-note-not-found{
+    padding-top: 20px;
+    margin: auto;
+}
+
+.title-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detail{
+    padding-top: 20px;
+}
+
+
+.form-input{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input input , textarea, button{
+    padding: 20px;
+    background-color: #F7A76C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

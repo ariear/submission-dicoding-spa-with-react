@@ -1,6 +1,11 @@
+import NoteInputWrapper from "../components/NoteInput"
+
 const AddNote = () => {
     return (
-        <p>Ini AddNote</p>
+        <div className="container">
+            <h1>Add new note</h1>
+            <NoteInputWrapper />
+        </div>
     )
 }
 
