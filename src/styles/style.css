@@ -152,3 +152,11 @@ nav ul li a{
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+.search-input{
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 300px;
+    border: 2px solid #F7A76C;
+    border-radius: 8px;
+}

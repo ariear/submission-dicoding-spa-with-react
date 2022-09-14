@@ -3,7 +3,7 @@ import Nav from "./components/Nav"
 import AddNote from "./pages/AddNote"
 import ArchivedNotes from "./pages/ArchivedNotes"
 import DetailNoteWrapper from "./pages/DetailNote"
-import Home from "./pages/Home"
+import HomeWrapper from "./pages/Home"
 import NotFound from "./pages/NotFound"
 
 const App  = () => {
@@ -11,7 +11,7 @@ const App  = () => {
     <>
     <Nav />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeWrapper />} />
       <Route path="/addnote" element={<AddNote />} />
       <Route path="/notes/:id" element={<DetailNoteWrapper />} />
       <Route path="/archivednotes" element={<ArchivedNotes />} />
