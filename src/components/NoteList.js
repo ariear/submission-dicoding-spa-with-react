@@ -1,4 +1,5 @@
 import CardNote from "./CardNote"
+import PropTypes from 'prop-types';
 
 const NoteList = ({notes,messageNotFound}) => {
     return (
@@ -13,6 +14,11 @@ const NoteList = ({notes,messageNotFound}) => {
             }
         </div>
     )
+}
+
+NoteList.propTypes = {
+    notes: PropTypes.arrayOf(PropTypes.object).isRequired,
+    messageNotFound: PropTypes.string.isRequired
 }
 
 export default NoteList

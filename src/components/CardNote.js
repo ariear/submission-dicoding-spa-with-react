@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
 
 const CardNote = ({note}) => {
     return (
@@ -10,6 +11,10 @@ const CardNote = ({note}) => {
         </div>
         </Link>
     )
+}
+
+CardNote.propTypes = {
+    note: PropTypes.object.isRequired
 }
 
 export default CardNote

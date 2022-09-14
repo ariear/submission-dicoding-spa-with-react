@@ -1,6 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
 import { addNote } from "../utils/local-data"
+import PropTypes from 'prop-types';
 
 const NoteInputWrapper = () => {
     const navigate = useNavigate();
@@ -52,6 +53,10 @@ class NoteInput extends React.Component{
         </form>
      )   
     }
+}
+
+NoteInput.propTypes = {
+    onSubmitHandler: PropTypes.func.isRequired
 }
 
 export default NoteInputWrapper

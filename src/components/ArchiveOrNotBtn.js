@@ -1,4 +1,5 @@
 import { BiArchiveIn ,BiArchiveOut} from "react-icons/bi";
+import PropTypes from 'prop-types';
 
 const ArchiveOrNotBtn = ({id,archived,onArchivedAndActiveHandler}) => {
     return (
@@ -11,6 +12,12 @@ const ArchiveOrNotBtn = ({id,archived,onArchivedAndActiveHandler}) => {
         }
         </>
     )
+}
+
+ArchiveOrNotBtn.propTypes = {
+    id: PropTypes.string.isRequired,
+    archived: PropTypes.bool.isRequired,
+    onArchivedAndActiveHandler: PropTypes.func.isRequired
 }
 
 export default ArchiveOrNotBtn
